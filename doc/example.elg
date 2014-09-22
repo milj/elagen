@@ -1,0 +1,21 @@
+# -*- encoding: utf-8 -*-
+
+Elagen::Specification.new do |s|
+  s.type       = :insert  # :insert or :sticker
+
+  s.labels     = [
+
+    ['BC109', 'NPN', '0.3W', '20V 100mA low-noise'],
+    ['BTA204-800E', '4A', '800V', 'triac 10mA'],
+    ['BT136-600D', '4A', '600V', 'triac 5mA'],
+    ['BC548B', 'NPN', '0.5W', '30V 100mA'],
+    [  0, 'V', [12, 15], '0.5W', '', 'Zener diode'],
+    [  0, 'MHz', 8, '30ppm', '16-30pF', 'crystal oscillator'],
+    [ -1, 'R', E12, '0.25W', '5\%', 'metal oxide'],
+    [  0, 'K', [10, 47], '0.6W', '1\%', 'metal film 50ppm/K'],
+    [  1, 'R', 22, '0.2W', '9x', 'resistor ladder'],
+    [  1, 'u', 10, '10V', 'low ESR', 'EEUFC1A101SH'],
+    ['0R', '', '', nil]
+
+  ]
+end
